@@ -564,6 +564,10 @@ body .main-wrapper {
   font-size: 22px;
   color: #f05356;
 }
+#main-content-wrapper .product-list-content section .product-list__best-sellers .art {
+  color: inherit;
+  font: inherit;
+}
 #main-content-wrapper .product-list-content section .product-list__best-sellers img {
   height: 150px;
 }
