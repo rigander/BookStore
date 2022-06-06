@@ -313,7 +313,7 @@ body .main-wrapper {
 }
 
 .main-slider {
-  background-image: url("/img/Banner.png");
+  background-image: url("../img/Banner.png");
 }
 .main-slider .main-slider__wrapper {
   width: 714px;
@@ -389,7 +389,7 @@ body .main-wrapper {
   width: 269px;
   height: 305px;
   color: #ffffff;
-  background-image: url("/img/deal of the month.png");
+  background-image: url("../img/deal of the month.png");
 }
 .side-slider .side-slider__content {
   width: 269px;
