@@ -236,7 +236,7 @@ body .main-wrapper {
   margin-right: 0.9em;
   margin-bottom: 1.2em;
   border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid #FC0;
+  border-bottom: 0.7em solid #f2f2f3;
   border-left: 0.3em solid transparent;
   /* Controlls the size of the stars. */
   font-size: 9px;
@@ -250,7 +250,7 @@ body .main-wrapper {
   top: 0.6em;
   left: -1em;
   border-right: 1em solid transparent;
-  border-bottom: 0.7em solid #FC0;
+  border-bottom: 0.7em solid #f2f2f3;
   border-left: 1em solid transparent;
   transform: rotate(-35deg);
 }
@@ -464,7 +464,7 @@ body .main-wrapper {
 }
 #main-content-wrapper .product-list-content aside {
   width: 188px;
-  height: 864px;
+  height: 863px;
   border: solid 1px rgba(0, 0, 1, 0.16);
   margin-right: 9px;
 }
