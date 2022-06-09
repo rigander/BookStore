@@ -375,14 +375,19 @@ body .main-wrapper {
   color: white;
   text-align: center;
 }
-.main-slider .main-slider__content .man {
+.main-slider .man {
   font-size: 47px;
   font-weight: bold;
+  color: white;
 }
-.main-slider .main-slider__content .title {
+.main-slider .man a {
+  text-decoration: none;
+  color: white;
+}
+.main-slider .title {
   font-size: 25px;
 }
-.main-slider .main-slider__content .author {
+.main-slider .author {
   font-size: 21px;
   font-weight: bold;
 }
@@ -431,15 +436,15 @@ body .main-wrapper {
   margin-bottom: 6px;
 }
 .side-slider button {
-  display: flex;
-  justify-content: center;
   background-color: #52a452;
   border: none;
   border-radius: 2px;
+  color: white;
+  display: flex;
   width: 108px;
   height: 28px;
+  justify-content: center;
   text-shadow: 0.5px 0.9px 0 rgba(74, 151, 74, 0.75);
-  color: white;
   font-size: 19px;
 }
 .side-slider button:hover {
@@ -599,6 +604,9 @@ body .main-wrapper {
   text-decoration: none;
   color: black;
   opacity: 75%;
+}
+#main-content-wrapper .product-list-content section .product-list__nav ul li a:hover {
+  font-size: 19px;
 }
 #main-content-wrapper .product-list-content section .product-list__nav .big-box {
   width: 232px;
