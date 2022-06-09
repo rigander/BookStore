@@ -13,6 +13,13 @@ body .main-wrapper {
   border: solid 1px rgba(0, 0, 1, 0.16);
 }
 
+.header-content__your-cart button:hover {
+  background-image: linear-gradient(to top, #424242, #242424);
+}
+.header-content__your-cart button:active {
+  background-image: linear-gradient(to top, #c2d1dc, rgba(36, 36, 36, 0.58));
+}
+
 .account-nav-container {
   background-color: #424242;
 }
@@ -110,6 +117,8 @@ body .main-wrapper {
   height: 33px;
   width: 328px;
   outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 #search-button {
@@ -185,12 +194,6 @@ body .main-wrapper {
   border-radius: 1px;
   font-size: 15px;
 }
-.header-content__your-cart button:hover {
-  background-image: linear-gradient(to top, #424242, #242424);
-}
-.header-content__your-cart button:active {
-  background-image: linear-gradient(to top, #c2d1dc, rgba(36, 36, 36, 0.58));
-}
 
 .header-content__wish-list {
   display: flex;
@@ -238,7 +241,7 @@ body .main-wrapper {
   border-right: 0.3em solid transparent;
   border-bottom: 0.7em solid #f2f2f3;
   border-left: 0.3em solid transparent;
-  /* Controlls the size of the stars. */
+  /* Controls the size of the stars. */
   font-size: 9px;
 }
 .header-content__wish-list .star:before, .header-content__wish-list .star:after {
