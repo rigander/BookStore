@@ -653,37 +653,58 @@ body .main-wrapper {
 }
 
 #form {
-  margin-left: 26px;
   width: 674px;
   height: 307px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 #form h2 {
-  margin: 0;
+  margin: 0 495px 25px 0;
+}
+
+label {
+  font-size: 16px;
+  color: #a2a2a2;
 }
 
 input {
   margin-bottom: 14px;
-  margin-right: 52px;
+  margin-left: 20px;
+  border: solid 1px #e2e2e2;
+  border-radius: 3px;
 }
 
 #name {
-  margin-top: 22px;
   width: 545px;
   height: 29px;
 }
 
 #email {
-  margin-left: 18px;
   width: 545px;
   height: 29px;
 }
 
 #message {
-  margin-left: 17px;
-  width: 545px;
+  width: 547px;
   height: 127px;
+  resize: none;
+  margin-left: 20px;
+  border: solid 1px #e2e2e2;
+  border-radius: 3px;
+  vertical-align: top;
+}
+
+#submit2 {
+  height: 38px;
+  width: 97px;
+  margin-top: 12px;
+  font-size: 18.5px;
+  font-weight: bold;
+  border: none;
+  background-image: linear-gradient(to top, #79b260, #92d774);
+  border-radius: 1px;
+  color: #ffffff;
 }
 
 .may-like {
