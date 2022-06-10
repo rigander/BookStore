@@ -310,6 +310,18 @@ body .main-wrapper {
   display: flex;
   justify-content: center;
 }
+#main-content-wrapper .title-science-fiction {
+  font-size: 24px;
+  font-weight: 300;
+  color: #464646;
+  border: solid 1px #d8dce0;
+  box-sizing: border-box;
+  border-bottom: none;
+  width: inherit;
+}
+#main-content-wrapper .title-science-fiction h4 {
+  margin: 18px 0 15px 30px;
+}
 #main-content-wrapper .product-list-content {
   width: 996px;
   display: flex;
@@ -317,7 +329,7 @@ body .main-wrapper {
 }
 #main-content-wrapper .product-list-content section {
   width: 798px;
-  height: 864px;
+  height: 1118px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -334,7 +346,6 @@ body .main-wrapper {
   font-weight: 300;
   color: #646464;
   margin-left: 631px;
-  margin-top: 21px;
   padding: 0;
 }
 #main-content-wrapper .product-list-content section #page-number:hover {
@@ -369,10 +380,9 @@ body .main-wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 5px 0 5px;
+  padding: 0 5px 0 5px;
   border: solid 1px #d8dce0;
   border-top: none;
-  height: 825px;
 }
 #main-content-wrapper .product-list-content section .product-list__best-sellers div {
   position: relative;
@@ -417,7 +427,7 @@ body .main-wrapper {
   margin: 0;
 }
 #main-content-wrapper .product-list-content section .product-list__best-sellers div img {
-  height: 177px;
+  height: 159px;
 }
 #main-content-wrapper .product-list-content section .product-list__best-sellers div span {
   display: block;

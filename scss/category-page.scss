@@ -39,13 +39,25 @@ body{
   width: 1280px;
   display: flex;
   justify-content: center;
+  .title-science-fiction{
+    font-size: 24px;
+    font-weight: 300;
+    color: #464646;
+    border: solid 1px #d8dce0;
+    box-sizing: border-box;
+    border-bottom: none;
+    width: inherit;
+    h4{
+      margin: 18px 0 15px 30px;
+    }
+  }
   .product-list-content{
     width: $cw;
     display: flex;
     justify-content: center;
     section{
       width: 798px;
-      height: 864px;
+      height: 1118px;
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -61,7 +73,6 @@ body{
         font-weight: 300;
         color: #646464;
         margin-left: 631px;
-        margin-top: 21px;
         padding: 0;
         &:hover{
           color: #FFCC00;
@@ -98,10 +109,9 @@ body{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 5px 0 5px;
+        padding: 0 5px 0 5px;
         border: solid 1px #d8dce0;
         border-top: none;
-        height: 825px;
         div{
           position: relative;
           font-size: 15px;
@@ -144,7 +154,7 @@ body{
             margin: 0;
           }
           img{
-            height: 177px;
+            height: 159px;
           }
           span{
             display: block;
@@ -166,5 +176,11 @@ body{
 }
 
 @import "aside-left";
+.categories__content{
+  button{
+
+  }
+}
+
 @import "footer";
 
