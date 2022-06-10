@@ -162,6 +162,7 @@ body{
   font-size: 16px;
   color: #7e7e7e;
   line-height: 1.55;
+  @extend %hide-scroll-bar;
 }
 .cart-billing{
   width: 607px;
@@ -315,6 +316,7 @@ body{
     line-height: 1.6;
     font-size: 14px;
     margin-right: 16px;
+    @extend %hide-scroll-bar;
   }
 }
 
@@ -371,6 +373,7 @@ body{
       line-height: 1.5;
       font-size: 13px;
       margin-top: -5px;
+      @extend %hide-scroll-bar;
     }
   }
 }

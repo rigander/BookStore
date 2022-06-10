@@ -1,0 +1,170 @@
+@import "normalize.css";
+@font-face {
+  font-family: SegoeWP;
+  src: url("../fonts/Segoe WP Regular.ttf");
+}
+
+// Variables
+$cw:996px;
+$ff:SegoeWP;
+%green-button-styles{
+  &:hover{
+    color: #636364;
+  }
+  &:active{
+    background-image: linear-gradient(to top, rgba(61, 253, 1, 0.3), rgba(91, 163, 78, 0.65));
+    text-shadow: 1px 1px 2px black;
+    color: #e6bd6a;
+  }
+}
+%hide-scroll-bar{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body{
+  display: flex;
+  .main-wrapper{
+    margin: auto;
+    flex-basis: 1280px;
+    font-family: $ff;
+    border: solid 1px rgba(0, 0, 1, 0.16);
+  }
+}
+@import "header";
+
+#main-content-wrapper{
+  margin-top: 14px;
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  .product-list-content{
+    width: $cw;
+    display: flex;
+    justify-content: center;
+    section{
+      width: 798px;
+      height: 864px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      #page-number{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 138px;
+        height: 28px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #646464;
+        margin-left: 631px;
+        margin-top: 21px;
+        padding: 0;
+        &:hover{
+          color: #FFCC00;
+        }
+        div{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          height: 28px;
+          width: 24px;
+          padding: 0;
+          a{
+            text-decoration: none;
+            color: #646464;
+            &:hover{
+              color: red;
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+        .three{
+          padding-top: 2px;
+          height: 23px;
+          border: 1px solid #bfbfbf;
+          border-bottom: 4px solid #94bc6b;
+        }
+      }
+
+// Science Fiction (product list)
+      .product-list__best-sellers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 5px 0 5px;
+        border: solid 1px #d8dce0;
+        border-top: none;
+        height: 825px;
+        div{
+          position: relative;
+          font-size: 15px;
+          font-weight: 300;
+          text-align: center;
+          color: #646464;
+          height: 256px;
+          width: 125px;
+          display: flex;
+          flex-direction: column;
+          padding-left: 9px;
+          .discount{
+            align-self: end;
+            position: absolute;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            border:none;
+            border-radius: 50%;
+            background-color: #f05356;
+            padding: 0;
+            color: white;
+            font-size: 19px;
+            span{
+              color: #ffffff;
+              font-family: $ff;
+              font-size: 19px;
+              font-weight: bold;
+            }
+            .off{
+              font-size: 13px;
+              font-weight: normal;
+              color: #ffffff;
+            }
+          }
+          p{
+            margin: 0;
+          }
+          img{
+            height: 177px;
+          }
+          span{
+            display: block;
+            font-weight: bold;
+            font-size: 22px;
+            color: #f05356;
+          }
+        }
+        .art{
+          color: inherit;
+          font: inherit;
+        }
+        .immortals{
+          padding: 0 7px;
+        }
+      }
+    }
+  }
+}
+
+@import "aside-left";
+@import "footer";
+
