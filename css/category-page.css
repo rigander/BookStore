@@ -345,13 +345,13 @@ body .main-wrapper {
   font-size: 16px;
   font-weight: 300;
   color: #646464;
-  margin-left: 631px;
+  margin: 0 0 0 631px;
   padding: 0;
 }
 #main-content-wrapper .product-list-content section #page-number:hover {
   color: #FFCC00;
 }
-#main-content-wrapper .product-list-content section #page-number div {
+#main-content-wrapper .product-list-content section #page-number li {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -359,15 +359,24 @@ body .main-wrapper {
   height: 28px;
   width: 24px;
   padding: 0;
+  list-style: none;
 }
-#main-content-wrapper .product-list-content section #page-number div a {
+#main-content-wrapper .product-list-content section #page-number li a {
   text-decoration: none;
   color: #646464;
 }
-#main-content-wrapper .product-list-content section #page-number div a:hover {
+#main-content-wrapper .product-list-content section #page-number li a:hover {
   color: red;
   font-size: 20px;
   font-weight: bold;
+}
+#main-content-wrapper .product-list-content section #page-number li a:active {
+  padding-top: 2px;
+  height: 23px;
+  width: 24px;
+  border: 1px solid #bfbfbf;
+  border-bottom: 4px solid #94bc6b;
+  text-align: center;
 }
 #main-content-wrapper .product-list-content section #page-number .three {
   padding-top: 2px;
@@ -383,6 +392,18 @@ body .main-wrapper {
   padding: 0 5px 0 5px;
   border: solid 1px #d8dce0;
   border-top: none;
+}
+#main-content-wrapper .product-list-content section .product-list__best-sellers a {
+  text-decoration: none;
+  color: #555454;
+}
+#main-content-wrapper .product-list-content section .product-list__best-sellers a:hover {
+  color: black;
+  font-weight: bold;
+}
+#main-content-wrapper .product-list-content section .product-list__best-sellers a:active {
+  color: red;
+  font-weight: bold;
 }
 #main-content-wrapper .product-list-content section .product-list__best-sellers div {
   position: relative;
@@ -443,11 +464,21 @@ body .main-wrapper {
   padding: 0 7px;
 }
 
+aside .categories__content li a:hover, aside .categories__content li:hover, aside .categories__content button:hover {
+  color: red;
+}
+aside .categories__content li a:active, aside .categories__content li:active, aside .categories__content button:active {
+  background-image: linear-gradient(to top, rgba(61, 253, 1, 0.3), rgba(91, 163, 78, 0.65));
+  text-shadow: 1px 1px 2px black;
+  color: #ffffff;
+}
+
 aside {
   width: 188px;
-  height: 863px;
+  height: 864px;
   border: solid 1px rgba(0, 0, 1, 0.16);
   margin-right: 9px;
+  box-sizing: border-box;
 }
 aside .categories__content #categories {
   font-size: 24px;
@@ -460,29 +491,19 @@ aside .categories__content button {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 188px;
+  width: 186px;
   height: 29px;
-  background-image: linear-gradient(to top, #79b260, #92d774);
   border: none;
-  color: white;
+  color: #555454;
   padding-left: 21px;
   font-weight: bold;
 }
-aside .categories__content button:hover {
-  color: #6d6d6d;
-  background-image: linear-gradient(to top, rgba(121, 178, 96, 0.51), #92d774);
-}
-aside .categories__content button:active {
-  background-image: linear-gradient(to top, rgba(61, 253, 1, 0.3), rgba(91, 163, 78, 0.65));
-  text-shadow: 1px 1px 2px black;
-  color: #e6bd6a;
-}
 aside .categories__content ul {
-  padding-left: 20px;
+  padding-left: 0;
   margin: 8px 0;
 }
 aside .categories__content ul .list-title {
-  margin: 0 0 4px 0;
+  margin: 0 0 4px 19px;
   color: black;
   font-weight: bold;
 }
@@ -490,9 +511,12 @@ aside .categories__content ul .last {
   border: none;
 }
 aside .categories__content li {
-  padding-left: 4px;
   list-style: none;
   font-weight: 600;
+  width: 186px;
+}
+aside .categories__content li div {
+  margin-left: 24px;
 }
 aside .categories__content li div {
   display: flex;
@@ -504,12 +528,6 @@ aside .categories__content li div {
 aside .categories__content li a {
   text-decoration: none;
   color: #555454;
-}
-aside .categories__content li a:hover {
-  color: red;
-}
-aside .categories__content li a:hover:active {
-  text-shadow: 1px 1px 2px black;
 }
 
 footer {

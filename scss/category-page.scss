@@ -7,21 +7,7 @@
 // Variables
 $cw:996px;
 $ff:SegoeWP;
-%green-button-styles{
-  &:hover{
-    color: #636364;
-  }
-  &:active{
-    background-image: linear-gradient(to top, rgba(61, 253, 1, 0.3), rgba(91, 163, 78, 0.65));
-    text-shadow: 1px 1px 2px black;
-    color: #e6bd6a;
-  }
-}
-%hide-scroll-bar{
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
+
 
 body{
   display: flex;
@@ -72,12 +58,12 @@ body{
         font-size: 16px;
         font-weight: 300;
         color: #646464;
-        margin-left: 631px;
+        margin: 0 0 0 631px ;
         padding: 0;
         &:hover{
           color: #FFCC00;
         }
-        div{
+        li{
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -85,6 +71,7 @@ body{
           height: 28px;
           width: 24px;
           padding: 0;
+          list-style: none;
           a{
             text-decoration: none;
             color: #646464;
@@ -92,6 +79,14 @@ body{
               color: red;
               font-size: 20px;
               font-weight: bold;
+            }
+            &:active{
+              padding-top: 2px;
+              height: 23px;
+              width: 24px;
+              border: 1px solid #bfbfbf;
+              border-bottom: 4px solid #94bc6b;
+              text-align: center;
             }
           }
         }
@@ -112,6 +107,18 @@ body{
         padding: 0 5px 0 5px;
         border: solid 1px #d8dce0;
         border-top: none;
+        a{
+          text-decoration: none;
+          color: #555454;
+          &:hover{
+            color: black;
+            font-weight: bold;
+          }
+          &:active{
+            color: red;
+            font-weight: bold;
+          }
+        }
         div{
           position: relative;
           font-size: 15px;
@@ -176,11 +183,6 @@ body{
 }
 
 @import "aside-left";
-.categories__content{
-  button{
-
-  }
-}
 
 @import "footer";
 
