@@ -58,7 +58,7 @@ body{
   display: flex;
   align-items: center;
 }
-.nav-content{
+.bread-cramps{
   width: 465px;
   height: 16px;
   padding-left: 17px;
@@ -68,35 +68,13 @@ body{
     list-style: none;
     display: flex;
     align-items: center;
-    .double-arrow{
-      padding-left: 5px;
-      padding-top: 5px;
-      display:flex;
-      width: 10px;
-      height: 4px;
-      .created-s-arrow{
-        padding: 0;
-        margin-left: -2px;
-        .one{
-          height: 1px;
-          width: 5px;
-          background-color: #a6a6a6;
-          transform: rotate(55deg);
-        }
-        .two{
-          margin-top: 2.5px;
-          height: 1px;
-          width: 5px;
-          background-color: #a6a6a6;
-          transform: rotate(-55deg);
-        }
-      }
-    }
     a{
       text-decoration: none;
       color: #a6a6a6;
     }
-  }
+  }.bi-chevron-double-right{
+     padding-top: 5px;
+   }
 
 }
 
@@ -104,6 +82,8 @@ body{
 .wrapper-content-cart{
   padding-bottom: 29px;
 }
+
+// IN STOCK sign
 .in-stock-wrapper{
   position: absolute;
   width: 47px;
@@ -122,6 +102,7 @@ body{
     font-size: 10px;
     height: 10px;
     width: 47px;
+    padding-bottom: 0.5px;
     background-color: white;
   }
 }
