@@ -12,8 +12,12 @@
   color: #e6bd6a;
 }
 
+.product-review .name .text-review, .prod-info-bottom__content p, #star-wars1 {
+  scrollbar-width: none; /* Firefox */
+}
 .product-review .name .text-review::-webkit-scrollbar, .prod-info-bottom__content p::-webkit-scrollbar, #star-wars1::-webkit-scrollbar {
   display: none;
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 body {
