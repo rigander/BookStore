@@ -304,6 +304,47 @@ body .main-wrapper {
   color: white;
 }
 
+#main-nav__computers {
+  display: inline-block;
+  width: 70px;
+}
+
+.main-nav__cooking {
+  display: inline-block;
+  width: 50px;
+}
+
+.main-nav__education {
+  display: inline-block;
+  width: 60px;
+}
+
+.main-nav__fiction,
+.main-nav__health {
+  display: inline-block;
+  width: 50px;
+}
+
+.main-nav__math {
+  display: inline-block;
+  width: 85px;
+}
+
+.main-nav__medical {
+  display: inline-block;
+  width: 50px;
+}
+
+.main-nav__reference {
+  display: inline-block;
+  width: 55px;
+}
+
+#main-nav__science {
+  display: inline-block;
+  width: 60px;
+}
+
 #main-content-wrapper {
   margin-top: 14px;
   width: 1280px;
