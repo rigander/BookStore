@@ -168,6 +168,10 @@ body{
                 display: flex;
                 flex-direction: column;
                 padding-left: 9px;
+                .war-of-art{
+                  width: 90px;
+                  align-self: center;
+                }
                 .discount{
                   align-self: end;
                   position: absolute;
@@ -219,6 +223,5 @@ body{
         }
     }
 }
-
 @import "footer";
 

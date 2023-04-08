@@ -716,6 +716,10 @@ body .main-wrapper {
   flex-direction: column;
   padding-left: 9px;
 }
+#main-content-wrapper .product-list-content section .product-list__best-sellers div .war-of-art {
+  width: 90px;
+  align-self: center;
+}
 #main-content-wrapper .product-list-content section .product-list__best-sellers div .discount {
   align-self: end;
   position: absolute;
